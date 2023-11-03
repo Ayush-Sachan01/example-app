@@ -51,7 +51,7 @@ $track1 = new Song();
 $track1->setTitle("ABC SONG");
 $track1->setArtist("Eminem");
 $track1->setGenre("Jazz");
-$track1->setTempo("Moderato");
+$track1->setTempo("70 BPM");
 
 // Displaying information
 echo "Title of the song is: {$track1->getTitle()} \n";
