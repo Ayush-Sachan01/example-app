@@ -36,7 +36,7 @@ class Practical {
 // Example usage
 Practical::printHello();
 
-$sum = Practical::add(2, 3);
+$sum = Practical::add(1, 3);
 echo "Sum is $sum \n";
 
 $n = 20;// no. of elements in fibonacci sequence
