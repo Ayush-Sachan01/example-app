@@ -21,7 +21,7 @@ class Practical {
         }
 
         // Check for invalid input
-        if ($n <= 0) {
+        elseif ($n <= 0) {
             throw new \InvalidArgumentException("Invalid Input. Please enter a positive integer\n");
         } elseif ($n == 1) {
             // Base case: Fibonacci sequence with one element

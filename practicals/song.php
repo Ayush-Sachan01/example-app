@@ -40,6 +40,12 @@ class Song {
     }
 
     public function setTempo($tempo) {
+        if(is_float($tempo)){
+            throw new \InvalidArgumentException("Tempo can only be integer. Enter again.");
+        }
+      if(!is_numeric($tempo)){
+          throw new \InvalidArgumentException("Tempo can only be Integer.Enter again.\n");
+      }
         $this->tempo = $tempo;
     }
 }
@@ -48,10 +54,10 @@ class Song {
 $track1 = new Song();
 
 // Setting values using setter methods
-$track1->setTitle("ABC SONG");
+$track1->setTitle("Lucky-You");
 $track1->setArtist("Eminem");
-$track1->setGenre("Jazz");
-$track1->setTempo("70 BPM");
+$track1->setGenre("Hip-Hop");
+$track1->setTempo("70");
 
 // Displaying information
 echo "Title of the song is: {$track1->getTitle()} \n";
