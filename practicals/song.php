@@ -54,15 +54,15 @@ class Song {
 $track1 = new Song();
 
 // Setting values using setter methods
-$track1->setTitle("Lucky-You");
-$track1->setArtist("Eminem");
-$track1->setGenre("Hip-Hop");
-$track1->setTempo("70");
-
-// Displaying information
-echo "Title of the song is: {$track1->getTitle()} \n";
-echo "Artist of the song is: {$track1->getArtist()} \n";
-echo "Genre of the song is: {$track1->getGenre()} \n";
-echo "Tempo of the song is: {$track1->getTempo()} \n";
+//$track1->setTitle("Lucky-You");
+//$track1->setArtist("Eminem");
+//$track1->setGenre("Hip-Hop");
+//$track1->setTempo("70");
+//
+//// Displaying information
+//echo "Title of the song is: {$track1->getTitle()} \n";
+//echo "Artist of the song is: {$track1->getArtist()} \n";
+//echo "Genre of the song is: {$track1->getGenre()} \n";
+//echo "Tempo of the song is: {$track1->getTempo()} \n";
 
 ?>
