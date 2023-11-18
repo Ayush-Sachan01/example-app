@@ -6,7 +6,8 @@
         /* Just some basic styling for the table */
         table {
             border-collapse: collapse;
-            width: 100%;
+            width: 50%;
+            margin: auto;
         }
         th, td {
             border: 1px solid #dddddd;

@@ -28,18 +28,8 @@ Route::get('/veggies',function(){
 });
 
 Route::get('/songs_static', function () {
-    $song1=new Song();
-    $song1->setTitle("With You");
-    $song1->setArtist("AP Dhillon");
 
-    $song2=new Song();
-    $song2->setTitle("Lucky You");
-    $song2->setArtist("Eminem");
-
-    $song3=new Song();
-    $song3->setTitle("Space Lion");
-    $song3->setArtist("Seatbelts");
-    return view('songs',['songs'=> [$song1,$song2,$song3]]);
+    return 'songs_static';
 });
 Route::get('/songs', function () {
     return view('songs', [ 'songs' => Song::all() ] );
