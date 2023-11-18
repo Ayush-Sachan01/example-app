@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Practicals\song;
+use App\Models\Song;
 
 
 /*
@@ -27,7 +27,7 @@ Route::get('/veggies',function(){
     return view('veggies');
 });
 
-Route::get('/songs', function () {
+Route::get('/songs_static', function () {
     $song1=new Song();
     $song1->setTitle("With You");
     $song1->setArtist("AP Dhillon");
@@ -40,4 +40,7 @@ Route::get('/songs', function () {
     $song3->setTitle("Space Lion");
     $song3->setArtist("Seatbelts");
     return view('songs',['songs'=> [$song1,$song2,$song3]]);
+});
+Route::get('/songs', function () {
+    return view('songs', [ 'songs' => Song::all() ] );
 });
