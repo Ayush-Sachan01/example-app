@@ -30,8 +30,8 @@
     </tr>
     @foreach ($songs as $song)
     <tr>
-        <td>{{ $song -> title}}</td>
-        <td>{{ $song -> artist }}</td>
+        <td>{{ $song -> getTitle()}}</td>
+        <td>{{ $song -> getArtist() }}</td>
     </tr>
     @endforeach
 
