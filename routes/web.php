@@ -28,9 +28,9 @@ Route::get('/veggies',function(){
 });
 
 Route::get('/songs_static', function () {
-
-    return 'songs_static';
+    return view('songs_static');
 });
 Route::get('/songs', function () {
     return view('songs', [ 'songs' => Song::all() ] );
+   // return view('songs', [ 'songs' => Song::where('artist','Seatbelts')->get() ] ); -- This is done to only show a specific artist
 });

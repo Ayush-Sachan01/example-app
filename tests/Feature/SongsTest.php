@@ -17,4 +17,10 @@ class SongsTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    public function testsongs_staticOk(): void
+    {
+        $response =$this->get("/songs_static");
+        $response->assertStatus(200);
+    }
 }
