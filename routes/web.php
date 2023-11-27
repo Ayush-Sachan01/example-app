@@ -34,3 +34,6 @@ Route::get('/songs', function () {
     return view('songs', [ 'songs' => Song::all() ] );
    // return view('songs', [ 'songs' => Song::where('artist','Seatbelts')->get() ] ); -- This is done to only show a specific artist
 });
+Route::get('/playlists/{playlistId}',function (String $playlistId) {
+    return view('playlist', ['songs' => Song::all(), 'playlistId'=>$playlistId]);
+});
